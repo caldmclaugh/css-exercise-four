@@ -1,4 +1,96 @@
 body {
-  background-color: #dadada;
+  background-color: #fff;
   font-size: 10px;
 }
+
+.container {
+  background-color: #dadada;
+  margin:auto;
+  max-width: 375px;
+  min-height: 675px;
+}
+
+.modern {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75em;
+  letter-spacing: 3px;
+  line-height: 20px;
+  padding: 30px 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.preview {
+  display: flex;
+  font-size: 2.5em;
+  height:250px;
+  margin-top: 20px;
+  padding: 40px 0 0 40px;
+}
+
+.baku {
+  background-color: pink;
+  background-image:url("/images/baku.jpg");
+  background-size: cover;
+  display:flex;
+  object-fit: cover;
+  background-position: left;
+
+}
+
+
+.london {
+  background-color: pink;
+  background-image:url("/images/london.png");
+  background-position: right;
+  background-size: cover;
+  display:flex;
+  object-fit: cover;
+}
+
+.madrid {
+  background-color: pink;
+  background-image:url("/images/madrid.jpg");
+  background-position: left;
+  background-size: cover;
+  display:flex;
+  object-fit: cover;
+
+
+}
+
+.rome {
+  background-color: pink;
+  background-image:url("/images/rome.jpg");
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  object-fit: cover;
+
+}
+
+
+ @media screen and (min-width: 575px){
+
+body {
+  background-color: #dadada;
+}
+
+.container {
+  max-width: 900px;
+  min-height: 1000px;
+  column-count: 2;
+}
+}/*TABLET */
+
+@media screen and (min-width: 1199px){
+
+  body {background-color: #dadada;}
+
+  .container {
+    min-width: 1000px;
+    min-height: 1000px;
+    column-count: 4;
+    column-width: 100px;
+  }
+  } /*DESKTOP */
