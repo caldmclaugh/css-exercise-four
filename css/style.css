@@ -1,5 +1,4 @@
 body {
-  background-color: #fff;
   font-size: 10px;
 }
 
@@ -7,7 +6,6 @@ body {
   background-color: #dadada;
   margin:auto;
   max-width: 375px;
-  min-height: 675px;
 }
 
 .modern {
@@ -15,25 +13,24 @@ body {
   font-size: 1.75em;
   letter-spacing: 3px;
   line-height: 20px;
-  padding: 30px 0 10px 0;
+  padding: 5% 0 5% 0;
   text-align: center;
   text-transform: uppercase;
-}
+  }
 
 .preview {
   display: flex;
   font-size: 2.5em;
   height:250px;
-  margin-top: 20px;
-  padding: 40px 0 0 40px;
+  margin-bottom: 5%;
+  padding: 10% 0 0 10%;
 }
 
 .baku {
   background-color: pink;
-  background-image:url("/images/baku.jpg");
+  background-image:url("../images/baku.jpg");
   background-size: cover;
   display:flex;
-  object-fit: cover;
   background-position: left;
 
 }
@@ -41,31 +38,29 @@ body {
 
 .london {
   background-color: pink;
-  background-image:url("/images/london.png");
+  background-image:url("../images/london.png");
   background-position: right;
   background-size: cover;
   display:flex;
-  object-fit: cover;
+
 }
 
 .madrid {
   background-color: pink;
-  background-image:url("/images/madrid.jpg");
+  background-image:url("../images/madrid.jpg");
   background-position: left;
   background-size: cover;
   display:flex;
-  object-fit: cover;
 
 
 }
 
 .rome {
   background-color: pink;
-  background-image:url("/images/rome.jpg");
+  background-image:url("../images/rome.jpg");
   background-position: left;
   background-size: cover;
   display: flex;
-  object-fit: cover;
 
 }
 
@@ -77,20 +72,43 @@ body {
 }
 
 .container {
-  max-width: 900px;
-  min-height: 1000px;
+  min-width: 900px;
   column-count: 2;
+  column-gap: 2.5%;
+
 }
-}/*TABLET */
+
+.modern {
+  column-span:all;
+  display: block;
+  min-width: 100%;
+}
+
+
+}
+/*TABLET */
 
 @media screen and (min-width: 1199px){
 
-  body {background-color: #dadada;}
+  body {
+    background-color: #dadada;
+  }
 
   .container {
     min-width: 1000px;
-    min-height: 1000px;
     column-count: 4;
-    column-width: 100px;
+    column-gap: 2.5%;
+
+  }
+
+  .modern {
+    column-span:all;
+    display: block;
+    min-width: 100%;
+  }
+
+  .preview {
+    height:200px;
+  }
   }
   } /*DESKTOP */
