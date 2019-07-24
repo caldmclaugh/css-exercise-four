@@ -56,6 +56,13 @@ body {
 
 }
 
+@media screen and (min-width: 320px){
+  .container {
+    column-count: 1;
+}
+
+}
+/*MOBILE*/
 
  @media screen and (min-width: 575px){
 
@@ -102,5 +109,5 @@ body {
   .preview {
     height:200px;
   }
-  
+
   } /*DESKTOP */
